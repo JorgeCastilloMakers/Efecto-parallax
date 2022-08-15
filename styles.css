@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(96,53,3,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+.sun{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/sol.png);
+    background-size: cover;
+    filter: drop-shadow(5px 5px 10px #fdc62f);
+}
+
+.floor-1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/bg.png);
+    background-size: cover;
+    z-index: 2;
+    filter:sepia(80%);
+
+}
+
+.cloud-1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/nube_1.png);
+    background-size: cover;
+    z-index: 5;
+    top: 0;
+    left: -20%;
+    animation: clouds 7s ease-in infinite reverse both;
+}
+.cloud-2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/nube_2.png);
+    background-size: cover;
+    z-index: 10;
+    top: 0;
+    left: -60%;
+    animation: clouds 11s ease-in infinite reverse both;
+}
+.cloud-3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/nube_3.png);
+    background-size: cover;
+    z-index: 7;
+    top: 0;
+    left: -100%;
+    animation: clouds 9s ease-in infinite reverse both;
+}
+.cloud-4{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/nube_4.png);
+    background-size: cover;
+    z-index: 8;
+    top: 0;
+    right: 0;
+    left: -100%;
+    animation: clouds 10s ease-in infinite reverse both;
+}
+
+.figure{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/goku.png);
+    background-size: cover;
+    z-index: 9;
+    -webkit-animation: slide-tr 3s ease-in-out infinite alternate-reverse both;
+    animation: slide-tr 7s ease-in-out infinite alternate-reverse both;
+}
+.yo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: 8;
+    top: 50%;
+    right: 0;
+    animation: clouds 9s ease-in infinite reverse both;
+}
+.yo > h2{
+    font-size: 25px;
+    color: #fafafa;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 4px;
+}
+@-webkit-keyframes clouds {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(100px);
+              transform: translateX(1700px);
+    }
+  }
+  @keyframes clouds {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(100px);
+              transform: translateX(1700px);
+    }
+  }
+
+@keyframes floor {
+    0% {
+        transform: translate(0px);
+    }
+    100% {
+        transform: translateX(1700px);
+    }
+}
+
+@-webkit-keyframes slide-tr {
+    0% {
+      -webkit-transform: translateY(0) translateX(0);
+              transform: translateY(0) translateX(0);
+    }
+    100% {
+      -webkit-transform: translateY(-30px) translateX(30px);
+              transform: translateY(-30px) translateX(30px);
+    }
+  }
+  @keyframes slide-tr {
+    0% {
+      -webkit-transform: translateY(0) translateX(0);
+              transform: translateY(0) translateX(0);
+    }
+    100% {
+      -webkit-transform: translateY(-30px) translateX(30px);
+              transform: translateY(-30px) translateX(30px);
+    }
+  }
