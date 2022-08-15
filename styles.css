@@ -91,7 +91,6 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-size: cover;
     z-index: 8;
     top: 50%;
     right: 0;
@@ -152,4 +151,52 @@
       -webkit-transform: translateY(-30px) translateX(30px);
               transform: translateY(-30px) translateX(30px);
     }
+  }
+
+  @media (max-width: 1024px){
+    .sun{
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom;
+  }
+  
+  .floor-1{
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom;
+  }
+  
+  .cloud-1{
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position-y: 20% ;
+  }
+  .cloud-2{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 80% ;
+  }
+  .cloud-3{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 60% ;
+
+  }
+  .cloud-4{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 70% ;
+  }
+  
+  .figure{
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+  .yo > h2{
+      font-size: 18px;
+      text-align: center;
+
+  }
+
   }
